@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+   <style>
+
+
+    body{
+    width: auto;
+    }
+
+    
+.container {  
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". .";
+  height: auto;
+  margin: 15px;
+  border:  1px solid darkorchid;
+  border-radius: 15px;
+  box-shadow: 0 15px 15px darkmagenta;
+  background-color: beige;
+
+}
+.container-info{
+    border: 1px solid darkblue;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px;
+
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-exp{
+    padding: 10px;
+
+    width: auto;
+
+}
+main{
+    display: block;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+
+}
+img{
+    width: 150px;
+    height: 200px;
+    border-radius: 15px;
+    border: 2px solid darkorchid;
+    margin-top: 2px;
+}
+.profil-img{
+    border: 2px solid darkorchid;
+    border-radius: 15px;
+    padding: 5px;
+    
+
+}
+#tel, #mail, #address, #profile_png{
+width: 40px;
+height: 40px;
+position: relative;
+left: 0;
+margin-left: 0;
+margin-top: 10px;
+
+
+}
+.telephone, .email, .address{
+display: flex;
+justify-content: start;
+gap:10px;
+font-size: large;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: bold;
+
+}
+.personal{
+    width: 100%;
+
+}
+h1{
+   font-size: 3rem;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin:0;
+   
+}
+h3, h2{
+   font-size: 1.5rem;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin: 0;
+   padding-top: 0;
+   font-style: italic;
+
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 25px;
+    font-size: 4rem;
+}
+.line{
+    height: 2px;
+    width: 100%;
+    background-color: blue;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+#contact{
+    margin-left: 0;
+    margin-top: 0px;
+    font-size: 1.2rem;
+}
+.btn{
+    width: 150px;
+    height: 100px;
+}
+.text-for-profile{
+    font-size: 24px;
+    margin-top: 10px;
+}
+.text-for-work{
+    font-size: 24px;
+    margin-top: 0;
+}
+
+#title-companies{
+    font-size: 30px;
+    font-style: italic;
+}
+.text-for-edu{
+    font-size: 24px;
+    margin-top: 10px;
+}
+.parent {
+display: grid;
+grid-template-columns: repeat(10, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 2px;
+grid-row-gap: 0px;
+margin-top: 15px;
+height: 15px;
+width: 100%;
+}
+.container-skill{
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.item-1{
+    background-color: black;
+}
+.item1-1{
+    background-color: black;
+}
+.item2-1{
+    background-color: black;
+}
+.item3-1{
+    background-color: black;
+}
+.item4-1{
+    background-color: black;
+}
+
+.item5-1{
+    background-color: black;
+}
+.item6-1{
+    background-color: black;
+}
+
+.item0-1{
+    background-color: black;
+}
+.item11-1{
+    background-color: black;
+}
+.item22-1{
+    background-color: black;
+}
+.item33-1{
+    background-color: black;
+}
+.item44-1{
+    background-color: black;
+}
+
+.item55-1{
+    background-color: black;
+}
+.item66-1{
+    background-color: black;
+}
+.skill-btn{
+    cursor: pointer;
+    width: 100%;
+    padding: 0;
+    border: none;
+    margin-top: 10px;
+    font-size: medium;
+    text-align: left;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+
+
+}
+.skill-btn:hover{
+    box-shadow: 0 0 15px darkblue;
+}
+
+.skill-btn1{
+    cursor: pointer;
+    width: 100%;
+    padding: 0;
+    border: none;
+    margin-top: 10px;
+    font-size: medium;
+    text-align: left;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+
+
+}
+.skill-btn1:hover{
+    box-shadow: 0 0 15px darkblue;
+}
+
+
+
+
+
+
+   </style>
+
+</head>
+<body>
+
+    <main>
+        <div class="container">
+        
+     <div class="container-info">
+            <div class="profil-img">
+                <img src="./CVPic/IMG_20240620_084450[1].jpg" alt="Profile Image">
+            </div>
+            <h2 id="contact">CONTACT:</h2>
+            <div class="personal">
+                <div class="telephone">
+                    <img id="tel" src="./backgrounds/png/Phone_icon.png">
+                    <p>071/250-798</p>
+                </div>
+                  <div class="email">
+                    <img id="mail" src="./backgrounds/png/Email_icon.png">
+                    <p>pecekav58@gmail.com</p>
+
+                  </div>
+                  <div class="address">
+                    <img id="address" src="./backgrounds/png/images.png">
+                    <p>Ilindenska 115-3/3 Kavadarci North Macedonia</p>
+                  </div>
+              </div>
+<button class="skill-btn" ><h2 id="contact">Click for:<br> TECHNICAL SKILLS:</h2> </button>
+
+<div class="container-skill">
+             <h4>Circuit design and analysis</h4>
+<div class="parent">
+    <div class="item-1"></div>
+    <div class="item-2"></div>
+    <div class="item-3"></div>
+    <div class="item-4"></div>
+    <div class="item-5"></div>
+    <div class="item-6"></div>
+    <div class="item-7"></div>
+    <div class="item-8"></div>
+    <div class="item-9"></div>
+    <div class="item-10"></div>
+
+</div>
+<p class="skill-procent">0%</p>
+                
+
+              </div>
+
+
+              
+<div class="container-skill">
+              <h4>Electronics</h4>
+   <div class="parent">
+       <div class="item1-1"></div>
+       <div class="item1-2"></div>
+       <div class="item1-3"></div>
+       <div class="item1-4"></div>
+       <div class="item1-5"></div>
+       <div class="item1-6"></div>
+       <div class="item1-7"></div>
+       <div class="item1-8"></div>
+       <div class="item1-9"></div>
+       <div class="item1-10"></div>
+   
+   </div>
+   <p class="skill-procent1">0%</p>
+                   
+   
+</div>
+
+
+<div class="container-skill">
+                    <h4>Programming language C, C++</h4>
+         <div class="parent">
+             <div class="item2-1"></div>
+             <div class="item2-2"></div>
+             <div class="item2-3"></div>
+             <div class="item2-4"></div>
+             <div class="item2-5"></div>
+             <div class="item2-6"></div>
+             <div class="item2-7"></div>
+             <div class="item2-8"></div>
+             <div class="item2-9"></div>
+             <div class="item2-10"></div>
+         
+         </div>
+         <p class="skill-procent2">0%</p>
+                         
+         
+</div> 
+
+<div class="container-skill">
+                        <h4>Programming languages JavaScript, Python</h4>
+             <div class="parent">
+                 <div class="item3-1"></div>
+                 <div class="item3-2"></div>
+                 <div class="item3-3"></div>
+                 <div class="item3-4"></div>
+                 <div class="item3-5"></div>
+                 <div class="item3-6"></div>
+                 <div class="item3-7"></div>
+                 <div class="item3-8"></div>
+                 <div class="item3-9"></div>
+                 <div class="item3-10"></div>
+             
+             </div>
+             <p class="skill-procent3">0%</p>
+                             
+             
+ </div>
+
+
+                       
+    <div class="container-skill">
+                        <h4>Power systems</h4>
+             <div class="parent">
+                 <div class="item4-1"></div>
+                 <div class="item4-2"></div>
+                 <div class="item4-3"></div>
+                 <div class="item4-4"></div>
+                 <div class="item4-5"></div>
+                 <div class="item4-6"></div>
+                 <div class="item4-7"></div>
+                 <div class="item4-8"></div>
+                 <div class="item4-9"></div>
+                 <div class="item4-10"></div>
+             
+             </div>
+             <p class="skill-procent4">0%</p>
+                             
+             
+                           </div>
+
+<div class="container-skill">
+    <h4>Simulation software, Matlab, Visual Studio</h4>
+                 <div class="parent">
+                     <div class="item5-1"></div>
+                     <div class="item5-2"></div>
+                     <div class="item5-3"></div>
+                     <div class="item5-4"></div>
+                     <div class="item5-5"></div>
+                     <div class="item5-6"></div>
+                     <div class="item5-7"></div>
+                     <div class="item5-8"></div>
+                     <div class="item5-9"></div>
+                     <div class="item5-10"></div>
+                 
+                 </div>
+                 <p class="skill-procent5">0%</p>
+                                 
+                 
+                               </div>
+                             
+
+                               <div class="container-skill">
+                                <h4>Microcontrollers and Embedded
+                                    Systems</h4>
+                                             <div class="parent">
+                                                 <div class="item6-1"></div>
+                                                 <div class="item6-2"></div>
+                                                 <div class="item6-3"></div>
+                                                 <div class="item6-4"></div>
+                                                 <div class="item6-5"></div>
+                                                 <div class="item6-6"></div>
+                                                 <div class="item6-7"></div>
+                                                 <div class="item6-8"></div>
+                                                 <div class="item6-9"></div>
+                                                 <div class="item6-10"></div>
+                                             
+                                             </div>
+                                             <p class="skill-procent6">0%</p>
+                                                             
+                                             
+                                                           </div>
+                                                           <button class="skill-btn1" ><h2 id="contact">Click for:<br>SOFT SKILLS:</h2> </button>
+
+                                                           <div class="container-skill">
+                                                                        <h4>Analytical Skills</h4>
+                                                           <div class="parent">
+                                                               <div class="item0-1"></div>
+                                                               <div class="item0-2"></div>
+                                                               <div class="item0-3"></div>
+                                                               <div class="item0-4"></div>
+                                                               <div class="item0-5"></div>
+                                                               <div class="item0-6"></div>
+                                                               <div class="item0-7"></div>
+                                                               <div class="item0-8"></div>
+                                                               <div class="item0-9"></div>
+                                                               <div class="item0-10"></div>
+                                                           
+                                                           </div>
+                                                           <p class="skill-procent0">0%</p>
+                                                                           
+                                                           
+                                                                         </div>
+                                                           
+                                                           
+                                                                         
+                                                           <div class="container-skill">
+                                                                         <h4>Communication Skills</h4>
+                                                              <div class="parent">
+                                                                  <div class="item11-1"></div>
+                                                                  <div class="item11-2"></div>
+                                                                  <div class="item11-3"></div>
+                                                                  <div class="item11-4"></div>
+                                                                  <div class="item11-5"></div>
+                                                                  <div class="item11-6"></div>
+                                                                  <div class="item11-7"></div>
+                                                                  <div class="item11-8"></div>
+                                                                  <div class="item11-9"></div>
+                                                                  <div class="item11-10"></div>
+                                                              
+                                                              </div>
+                                                              <p class="skill-procent11">0%</p>
+                                                                              
+                                                              
+                                                           </div>
+                                                           
+                                                           
+                                                           <div class="container-skill">
+                                                                               <h4>Leadership Skills</h4>
+                                                                    <div class="parent">
+                                                                        <div class="item22-1"></div>
+                                                                        <div class="item22-2"></div>
+                                                                        <div class="item22-3"></div>
+                                                                        <div class="item22-4"></div>
+                                                                        <div class="item22-5"></div>
+                                                                        <div class="item22-6"></div>
+                                                                        <div class="item22-7"></div>
+                                                                        <div class="item22-8"></div>
+                                                                        <div class="item22-9"></div>
+                                                                        <div class="item22-10"></div>
+                                                                    
+                                                                    </div>
+                                                                    <p class="skill-procent22">0%</p>
+                                                                                    
+                                                                    
+                                                           </div> 
+                                                           
+                                                           <div class="container-skill">
+                                                                                   <h4>Problem-Solving Skills</h4>
+                                                                        <div class="parent">
+                                                                            <div class="item33-1"></div>
+                                                                            <div class="item33-2"></div>
+                                                                            <div class="item33-3"></div>
+                                                                            <div class="item33-4"></div>
+                                                                            <div class="item33-5"></div>
+                                                                            <div class="item33-6"></div>
+                                                                            <div class="item33-7"></div>
+                                                                            <div class="item33-8"></div>
+                                                                            <div class="item33-9"></div>
+                                                                            <div class="item33-10"></div>
+                                                                        
+                                                                        </div>
+                                                                        <p class="skill-procent33">0%</p>
+                                                                                        
+                                                                        
+                                                            </div>
+                                                           
+                                                           
+                                                                                  
+                                                               <div class="container-skill">
+                                                                                   <h4>Project Management</h4>
+                                                                        <div class="parent">
+                                                                            <div class="item44-1"></div>
+                                                                            <div class="item44-2"></div>
+                                                                            <div class="item44-3"></div>
+                                                                            <div class="item44-4"></div>
+                                                                            <div class="item44-5"></div>
+                                                                            <div class="item44-6"></div>
+                                                                            <div class="item44-7"></div>
+                                                                            <div class="item44-8"></div>
+                                                                            <div class="item44-9"></div>
+                                                                            <div class="item44-10"></div>
+                                                                        
+                                                                        </div>
+                                                                        <p class="skill-procent44">0%</p>
+                                                                                        
+                                                                        
+                                                                                      </div>
+                                                           
+                                                           <div class="container-skill">
+                                                               <h4>Organizational Skills</h4>
+                                                                            <div class="parent">
+                                                                                <div class="item55-1"></div>
+                                                                                <div class="item55-2"></div>
+                                                                                <div class="item55-3"></div>
+                                                                                <div class="item55-4"></div>
+                                                                                <div class="item55-5"></div>
+                                                                                <div class="item55-6"></div>
+                                                                                <div class="item55-7"></div>
+                                                                                <div class="item55-8"></div>
+                                                                                <div class="item55-9"></div>
+                                                                                <div class="item55-10"></div>
+                                                                            
+                                                                            </div>
+                                                                            <p class="skill-procent55">0%</p>
+                                                                                            
+                                                                            
+                                                                                          </div>
+                                                                                        
+                                                           
+                                                                                          <div class="container-skill">
+                                                                                           <h4>Mathematics</h4>
+                                                                                                        <div class="parent">
+                                                                                                            <div class="item66-1"></div>
+                                                                                                            <div class="item66-2"></div>
+                                                                                                            <div class="item66-3"></div>
+                                                                                                            <div class="item66-4"></div>
+                                                                                                            <div class="item66-5"></div>
+                                                                                                            <div class="item66-6"></div>
+                                                                                                            <div class="item66-7"></div>
+                                                                                                            <div class="item66-8"></div>
+                                                                                                            <div class="item66-9"></div>
+                                                                                                            <div class="item66-10"></div>
+                                                                                                        
+                                                                                                        </div>
+                                                                                                        <p class="skill-procent66">0%</p>
+                                                                                                                        
+                                                                                                        
+                                                                                                                      </div>                              
+
+
+
+</div>
+
+         
+
+<div class="container-exp">
+             <div class="name">
+                <h1>PECE KATMEROSKI</h1>
+                <h3>ENGINEER IN TELECOMUNICATION, ELECTRONICS AND SOFTWARE DEVELOPMENT</h3>
+            </div> 
+
+            <div class="profile">
+                <img id="profile_png" src="./backgrounds/png/profile_1.png">
+              
+                <h3>PROFILE</h3>
+                <div class="line"></div>
+                <div id="text"> <p class="text-for-profile">Graduate electrical engineer in electronics,automation
+                    and telecommunications, has been working
+                    dedicatedly and seriously for more than 10 years in this
+                    field, I carry out my tasks responsibly, I improve myself
+                    daily with the latest developments in technology, in the
+                    field of electronics, automation, programming, signal
+                    and data processing.</p></div>
+                
+            </div>
+            <div class="profile">
+                <img id="profile_png" src="./backgrounds/png/work_1.jpg">
+              
+                <h3>WORK EXPERIENCE</h3>
+                <div class="line"></div>
+                <div id="text"><p class="text-for-work">
+                    <br>
+                    <span id="title-companies">Cable Network Operator INEL Kavadarci</span><br>
+                    🔗 <a href="https://www.inel.mk/" target="_blank">inel.mk</a>
+                    <br> 2011 – Present <br>
+
+                    Key responsibilities:<br>
+                    ➡️Operational Management<br>
+                    ➡️Configure networks to ensure their smooth and reliable operation
+                    for fulfilling area objectives and processes.<br>
+                    ➡️Monitor network performance and troubleshoot problem areas
+                    as needed.<br>
+                    ➡️Oversee installation, configuration, maintenance, and
+                    troubleshooting of end user workstation hardware, software, and
+                    peripheral devices.<br>
+                    ➡️Practice network asset management, including maintenance of
+                    network component inventory and related documentation and
+                    technical specifications information.<br>
+                    ➡️Monitor and test network performance and provide network
+                    performance statistics and reports.<br>
+                    ➡️Trouble ticket generation and response; carrier interface and
+                    escalations.<br>
+                    ➡️Deployment and maintenance of network monitoring, analysis
+                    and reporting tools.<br>
+                    ➡️Installation of network hardware and software.<br><br>
+
+                    <span id="title-companies">Cable production factory FKN Negotino</span><br>
+                    🔗 <a href="https://www.inkacable.com/" target="_blank">www.inkacable.com</a><br>
+                    2008-2011<br>
+                    Key responsibilities:<br>
+                    ➡️Responsible in the cable construction department and
+involved in the automation and maintenance of the production
+process.
+<br><br>
+<span id="title-companies">Anhoch Computers-Skopje</span><br>
+🔗 <a href="https://www.anhoch.com/" target="_blank">www.anhoch.com</a><br>
+2007 – 2008<br>
+Key responsibilities:<br>
+➡️Servicing and maintenance of IT hardware and software.
+                    </p></div>
+             
+                
+            </div>
+
+            <div class="profile">
+                <img id="profile_png" src="./backgrounds/png/edu_1.png">
+              
+                <h3>EDUCATION</h3>
+                <div class="line"></div>
+                <p class="text-for-edu">💻2003-2008<br>
+                    🔗 <a href="https://feit.ukim.edu.mk/" target="_blank">feit.ukim.edu.mk/</a><br>
+                    FACULTY OF ELECTRICAL
+                    ENGINEERING AND INFORMATION
+                    TECHNOLOGIES<br>
+                    “Ss.Cyril and Methodius” University
+                    in Skopje
+                    </p>
+                    <br>
+                
+                    <img id="profile_png" src="./backgrounds/png/hobbies.png">
+              
+                    <h3>HOBBIES</h3>
+                    <div class="line"></div>
+                    <p class="text-for-edu">Web design, Playing Guitar, Beer tasting, Cooking, Exploring nature and others.</p>
+                        <br>  
+             
+                
+            
+
+</div>
+      
+
+
+    </main>
+
+    <script>
+     
+    document.querySelector('.skill-btn').addEventListener('click', function(){
+        let procent=document.querySelector('.skill-procent')
+        let procent1=document.querySelector('.skill-procent1')
+        let procent2=document.querySelector('.skill-procent2')
+        let procent3=document.querySelector('.skill-procent3')
+        let procent4=document.querySelector('.skill-procent4')
+        let procent5=document.querySelector('.skill-procent5')
+        let procent6=document.querySelector('.skill-procent6')
+          for(let i=1; i<8;i++){
+            let item = document.querySelector(`.item-${i}`)
+            
+            setTimeout(function(){
+                item.style.background="red";
+                procent.innerHTML= `${i*10}%`;
+            },i*200)
+        }
+
+        for(let i=1; i<9;i++){
+            let item = document.querySelector(`.item1-${i}`)
+            
+            setTimeout(function(){
+                item.style.background="red";
+                procent1.innerHTML= `${i*10}%`;
+            },i*200)
+        }
+
+        for(let i=1; i<6;i++){
+            let item = document.querySelector(`.item2-${i}`)
+            
+            setTimeout(function(){
+                item.style.background="red";
+                procent2.innerHTML= `${i*10}%`;
+            },i*200)
+        }
+
+        for(let i=1; i<8;i++){
+            let item = document.querySelector(`.item3-${i}`)
+            
+            setTimeout(function(){
+                item.style.background="red";
+                procent3.innerHTML= `${i*10}%`;
+            },i*200)
+        }
+
+        for(let i=1; i<9;i++){
+            let item = document.querySelector(`.item4-${i}`)
+            
+            setTimeout(function(){
+                item.style.background="red";
+                procent4.innerHTML= `${i*10}%`;
+            },i*200)
+        }
+
+        for(let i=1; i<10;i++){
+            let item = document.querySelector(`.item5-${i}`)
+            
+            setTimeout(function(){
+                item.style.background="red";
+                procent5.innerHTML= `${i*10}%`;
+            },i*200)
+        }
+
+        for(let i=1; i<7;i++){
+            let item = document.querySelector(`.item6-${i}`)
+            
+            setTimeout(function(){
+                item.style.background="red";
+                procent6.innerHTML= `${i*10}%`;
+            },i*200)
+        }
+    })
+      
+
+    document.querySelector('.skill-btn1').addEventListener('click', function(){
+        let procent0=document.querySelector('.skill-procent0')
+        let procent11=document.querySelector('.skill-procent11')
+        let procent22=document.querySelector('.skill-procent22')
+        let procent33=document.querySelector('.skill-procent33')
+        let procent44=document.querySelector('.skill-procent44')
+        let procent55=document.querySelector('.skill-procent55')
+        let procent66=document.querySelector('.skill-procent66')
+          for(let i=1; i<4;i++){
+            let item = document.querySelector(`.item0-${i}`)
+            
+            setTimeout(function(){
+                item.style.background="red";
+                procent0.innerHTML= `${i*10}%`;
+            },i*200)
+        }
+
+        for(let i=1; i<7;i++){
+            let item = document.querySelector(`.item11-${i}`)
+            
+            setTimeout(function(){
+                item.style.background="red";
+                procent11.innerHTML= `${i*10}%`;
+            },i*200)
+        }
+
+        for(let i=1; i<6;i++){
+            let item = document.querySelector(`.item22-${i}`)
+            
+            setTimeout(function(){
+                item.style.background="red";
+                procent22.innerHTML= `${i*10}%`;
+            },i*200)
+        }
+
+        for(let i=1; i<10;i++){
+            let item = document.querySelector(`.item33-${i}`)
+            
+            setTimeout(function(){
+                item.style.background="red";
+                procent33.innerHTML= `${i*10}%`;
+            },i*200)
+        }
+
+        for(let i=1; i<9;i++){
+            let item = document.querySelector(`.item44-${i}`)
+            
+            setTimeout(function(){
+                item.style.background="red";
+                procent44.innerHTML= `${i*10}%`;
+            },i*200)
+        }
+
+        for(let i=1; i<5;i++){
+            let item = document.querySelector(`.item55-${i}`)
+            
+            setTimeout(function(){
+                item.style.background="red";
+                procent55.innerHTML= `${i*10}%`;
+            },i*200)
+        }
+
+        for(let i=1; i<11;i++){
+            let item = document.querySelector(`.item66-${i}`)
+            
+            setTimeout(function(){
+                item.style.background="red";
+                procent66.innerHTML= `${i*10}%`;
+            },i*200)
+        }
+    })
+      
+       
+    </script>
+    
+</body>
+</html>
